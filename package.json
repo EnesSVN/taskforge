@@ -3,7 +3,11 @@
   "private": true,
   "version": "0.1.0",
   "packageManager": "pnpm@9.9.0",
-  "scripts": {},
+  "scripts": {
+    "dev:api": "pnpm -C apps/api start:dev",
+    "dev:web": "pnpm -C apps/web dev",
+    "dev:all": "turbo run dev --parallel"
+  },
   "devDependencies": {
     "@types/node": "^24.5.2",
     "eslint": "^9.36.0",
